@@ -21,10 +21,6 @@ getgenv().limbExtenderData = getgenv().limbExtenderData or {}
 local limbExtenderData = getgenv().limbExtenderData
 local limbExtender = nil
 
-if limbExtenderData.running ~= nil then
-	limbExtenderData.terminateOldProcess("FullKill")
-end
-
 local players = game:GetService("Players")
 local tweenService = game:GetService("TweenService")
 local contentProvider = game:GetService("ContentProvider")
